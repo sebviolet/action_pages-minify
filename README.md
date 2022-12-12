@@ -1,9 +1,15 @@
 # Minify Action
-[![GitHub release](https://img.shields.io/github/release/anthonyftwang/minify-action.svg?color=orange)](https://gitHub.com/anthonyftwang/minify-action/releases/)
+[![GitHub release](https://img.shields.io/github/release/DrA1ex/minify-action.svg?color=orange)](https://gitHub.com//minify-action/releases/)
 [![MIT license](https://img.shields.io/github/license/anthonyftwang/minify-action.svg?color=blue)](https://github.com/anthonyftwang/minify-action/blob/master/LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+
+This is an **updated** version of original [repository](https://github.com/anthonyftwang/minify-action).
 
 Github Action to minify js, css, and html files pushed to a branch, using the [Minify](https://github.com/coderaiser/minify) package.
+
+### Versions
+- Node.js v18.12.1
+- Minifer v9.1.0
+
 ### Usage
 Here the target branch is `foo`. You need to checkout your repository so the Minify Action job can access it. Then, you can auto-commit the files to the repository if desired.
 ```yaml
@@ -22,7 +28,7 @@ jobs:
           ref: ${{ github.ref }}
 
       - name: Minify Action
-        uses: anthonyftwang/minify-action@v1.0.1
+        uses: dra1ex/minify-action@v1.0.1
 
       # Auto-commit to repository
       - uses: stefanzweifel/git-auto-commit-action@v4
