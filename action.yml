@@ -1,5 +1,5 @@
-name: 'Minify Action'
-description: 'Minify js, css, and html files pushed to a branch'
+name: 'Pages Minigy'
+description: 'Minify js, css, and html files for GitHub pages'
 runs:
   using: 'docker'
   image: 'Dockerfile'
