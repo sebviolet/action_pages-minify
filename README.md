@@ -11,28 +11,34 @@ Github Action to minify js, css, and html files pushed to a branch, using the [M
 - Minify v9.1.0
 
 ### Usage
-Here the target branch is `foo`. You need to checkout your repository so the Minify Action job can access it. Then, you can auto-commit the files to the repository if desired.
+1. Optinal: create [.minify.json](https://github.com/coderaiser/minify#options) in root folder
+```json
+{
+    "html": {
+        "removeAttributeQuotes": false
+    },
+    "css": {
+        "compatibility": "*"
+    },
+    "js": {
+        "ecma": 2020,
+        "module": true
+    }
+}
+```
+
+2. Add `minify` step right after checkout in default [GitHub Pages build](https://docs.github.com/ru/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#creating-a-custom-github-actions-workflow-to-publish-your-site) action
 ```yaml
-name: Minify Workflow
-on:
-  push:
-    branches: [ foo ]
+# ...
 
 jobs:
+  # Build job
   build:
     runs-on: ubuntu-latest
     steps:
-      # Checks-out your repository
-      - uses: actions/checkout@v2
-        with:
-          ref: ${{ github.ref }}
-
+      - name: Checkout
+        uses: actions/checkout@v3
       - name: Minify Action
         uses: dra1ex/minify-action@v1.0.3
-
-      # Auto-commit to repository
-      - uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: Minify source code
-          branch: ${{ github.ref }}
+# ...
 ```
