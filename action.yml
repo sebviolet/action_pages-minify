@@ -1,4 +1,4 @@
-name: 'Pages Minigy'
+name: 'Pages Minify'
 description: 'Minify js, css, and html files for GitHub pages'
 runs:
   using: 'docker'
