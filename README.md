@@ -28,7 +28,7 @@ jobs:
           ref: ${{ github.ref }}
 
       - name: Minify Action
-        uses: dra1ex/minify-action@v1.0.1
+        uses: dra1ex/minify-action@v1.0.3
 
       # Auto-commit to repository
       - uses: stefanzweifel/git-auto-commit-action@v4
