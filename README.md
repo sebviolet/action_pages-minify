@@ -8,7 +8,7 @@ Github Action to minify js, css, and html files pushed to a branch, using the [M
 
 ### Versions
 - Node.js v18.12.1
-- Minifer v9.1.0
+- Minify v9.1.0
 
 ### Usage
 Here the target branch is `foo`. You need to checkout your repository so the Minify Action job can access it. Then, you can auto-commit the files to the repository if desired.
