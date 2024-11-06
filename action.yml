@@ -1,5 +1,5 @@
-name: 'Pages Minify'
-description: 'Minify js, css, and html files for GitHub pages'
+name: 'Pages Minify Reloaded'
+description: 'Up to date Minify js, css, and html files for GitHub pages'
 runs:
   using: 'docker'
   image: 'Dockerfile'
