@@ -1,5 +1,5 @@
 # Minify Action Reload
-This is an **updated** version of original [repository]([https://github.com/anthonyftwang/minify-action](https://github.com/actions-marketplace-validations/DrA1ex_pages-minify)).
+This is an **updated** version of original [repository](https://github.com/actions-marketplace-validations/DrA1ex_pages-minify).
 
 This action is in theory up to date.
 
