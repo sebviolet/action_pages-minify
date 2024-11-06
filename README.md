@@ -7,7 +7,7 @@ Github Action to minify js, css, and html files pushed to a branch, using the [M
 
 ### Versions
 - Node.js v23.x
-- Minify [latest npm minify](https://www.npmjs.com/package/minify))
+- Minify [latest npm minify](https://www.npmjs.com/package/minify)
 
 ### Usage
 1. Optinal: create [.minify.json](https://github.com/coderaiser/minify#options) in root folder
@@ -37,7 +37,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Minify Action
+      - name: Minify Action Reload
         uses: sebviolet/action_pages-minify@0.1
 # ...
 ```
