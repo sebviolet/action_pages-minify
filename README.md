@@ -1,14 +1,13 @@
-# Minify Action
-[![GitHub release](https://img.shields.io/github/release/DrA1ex/minify-action.svg?color=orange)](https://gitHub.com//minify-action/releases/)
-[![MIT license](https://img.shields.io/github/license/anthonyftwang/minify-action.svg?color=blue)](https://github.com/anthonyftwang/minify-action/blob/master/LICENSE)
+# Minify Action Reload
+This is an **updated** version of original [repository]([https://github.com/anthonyftwang/minify-action](https://github.com/actions-marketplace-validations/DrA1ex_pages-minify)).
 
-This is an **updated** version of original [repository](https://github.com/anthonyftwang/minify-action).
+This action is in theory up to date.
 
 Github Action to minify js, css, and html files pushed to a branch, using the [Minify](https://github.com/coderaiser/minify) package.
 
 ### Versions
-- Node.js v18.12.1
-- Minify v9.1.0
+- Node.js v23.x
+- Minify [latest npm minify](https://www.npmjs.com/package/minify))
 
 ### Usage
 1. Optinal: create [.minify.json](https://github.com/coderaiser/minify#options) in root folder
@@ -32,13 +31,13 @@ Github Action to minify js, css, and html files pushed to a branch, using the [M
 # ...
 
 jobs:
-  # Build job
+  # Build job or deploy for github-pages
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Minify Action
-        uses: dra1ex/minify-action@v1.0.3
+        uses: sebviolet/action_pages-minify@0.1
 # ...
 ```
