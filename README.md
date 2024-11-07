@@ -62,6 +62,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Minify Action Reload
-        uses: sebviolet/action_pages-minify@1.1
+        uses: sebviolet/action_pages-minify@1.2
 # ...
 ```
