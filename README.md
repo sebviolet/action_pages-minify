@@ -1,16 +1,16 @@
 # Minify Action Reload
-This is an **updated** version of original [repository](https://github.com/actions-marketplace-validations/DrA1ex_pages-minify).
+This is an **updated** version of this original [repository](https://github.com/actions-marketplace-validations/DrA1ex_pages-minify).
 
-This action is in theory up to date.
+This action is in theory more "up to date".
 
-Github Action to minify js, css, and html files pushed to a branch, using the [Minify](https://github.com/coderaiser/minify) package.
+The goal: Github Action to minify js, css, and html files pushed to a branch, using the [Minify](https://github.com/coderaiser/minify) package.
 
 ### Versions
 - Node.js v23.x
 - Minify [latest npm minify](https://www.npmjs.com/package/minify)
 
 ### Usage
-1. Optinal: create [.minify.json](https://github.com/coderaiser/minify#options) in root folder
+1. Optional: create [.minify.json](https://github.com/coderaiser/minify#options) in root folder
 ```json
 {
     "html": {
