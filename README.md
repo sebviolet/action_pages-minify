@@ -13,15 +13,39 @@ The goal: Github Action to minify js, css, and html files pushed to a branch, us
 1. Optional: create [.minify.json](https://github.com/coderaiser/minify#options) in root folder
 ```json
 {
+    "js": {
+        "type": "putout",
+        "putout": {
+            "quote": "'",
+            "mangle": true,
+            "mangleClassNames": true,
+            "removeUnusedVariables": true,
+            "removeConsole": false,
+            "removeUselessSpread": true
+        }
+    },
+    "img": {
+        "maxSize": 4096
+    },
     "html": {
-        "removeAttributeQuotes": false
+        "removeComments": true,
+        "removeCommentsFromCDATA": true,
+        "removeCDATASectionsFromCDATA": true,
+        "collapseWhitespace": true,
+        "collapseBooleanAttributes": true,
+        "removeAttributeQuotes": true,
+        "removeRedundantAttributes": true,
+        "useShortDoctype": true,
+        "removeEmptyAttributes": true,
+        "removeEmptyElements": false,
+        "removeOptionalTags": true,
+        "removeScriptTypeAttributes": true,
+        "removeStyleLinkTypeAttributes": true,
+        "minifyJS": true,
+        "minifyCSS": true
     },
     "css": {
         "compatibility": "*"
-    },
-    "js": {
-        "ecma": 2020,
-        "module": true
     }
 }
 ```
